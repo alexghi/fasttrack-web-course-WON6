@@ -11,6 +11,30 @@
         margin: 30px;
       }
     </style>
+    <script>
+      function createTable () {
+        const numberOfRows = Number(prompt('Insert Number of Rows: '));
+        const numberOfCells = Number(prompt('Insert Number of Cells: '));
+        this.changeContent(numberOfRows, numberOfCells);
+      }
+      function changeContent (tableRows, tableCells) {
+        const table = document.getElementById('myTable');
+        while (table.rows.length !== 0) {
+          table.deleteRow(-1);
+        }
+        for (let i = 0; i < tableRows; i++){
+          const insertedRow = table.insertRow(i);
+          if (i % 2 === 0) {
+            insertedRow.style.background = 'red';
+          } else {
+            insertedRow.style.background = 'blue';
+          }
+          for (let j = 0; j < tableCells; j++) {
+            insertedRow.insertCell(j).innerText = `Row-${i} Column-${j}`;
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <table id="myTable" border="1"></table>

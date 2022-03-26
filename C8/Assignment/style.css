@@ -1,0 +1,14 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    height: 500px;
+    width: 500px;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+}

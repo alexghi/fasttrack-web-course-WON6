@@ -5,6 +5,26 @@
   <head>
     <meta charset="utf-8" />
     <title>Change the content of a cell</title>
+    <script>
+      function updateCellContent () {
+        const tableRow = Number(prompt('Insert your preferred row number: '));
+        const tableCell = Number(prompt('Insert your preferred cell number: '));
+        const cellContent = 'Modified content';
+        this.changeContent(tableRow, tableCell, cellContent);
+      }
+      function changeContent (tableRow, tableCell, cellContent) {
+        let table = document.getElementById('myTable');
+        if (tableRow < table.rows.length) {
+          if (tableCell < table.rows[tableRow].cells.length) {
+            table.rows[tableRow].cells[tableCell].innerHTML = cellContent;
+          } else {
+            alert('Not a Valid Cell Number');
+          }
+        } else {
+          alert('Not a Valid Row Number');
+        }
+      }
+    </script>
   </head>
   <body>
     <table id="myTable" border="1">
@@ -22,7 +42,7 @@
       </tr>
     </table>
     <form>
-      <input type="button" onclick="changeContent()" value="Change content" />
+      <input type="button" onclick="updateCellContent()" value="Change content" />
     </form>
   </body>
 </html>

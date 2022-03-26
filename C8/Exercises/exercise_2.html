@@ -5,9 +5,20 @@
   <head>
     <meta charset="utf-8" />
     <title>Return first and last name from a form - w3resource</title>
+    <script>
+      getFormValue = function () {
+        const myForm = document.getElementById('form1');
+        const inputs = myForm.querySelectorAll('input[type = text]');
+        let mySentence = 'My name is';
+        inputs.forEach(inp => {
+          mySentence += ` ${inp.value} `;
+        });
+        console.log(mySentence);
+      }
+    </script>
   </head>
   <body>
-    <form id="form1" onsubmit="getFormvalue()">
+    <form id="form1" onsubmit="getFormValue()">
       First name: <input type="text" name="fname" value="David" /><br />
       Last name: <input type="text" name="lname" value="Beckham" /><br />
       <input type="submit" value="Submit" />
