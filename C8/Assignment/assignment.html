@@ -1,14 +1,29 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C8 Carousel Homework</title>
     <script src="script.js"></script>
-</head>
-<body>
+    <style>
+      img {
+        height: 400px;
+        width: 400px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body onload="nextPicture()">
     <div class="main-container">
-        <div></div>
+      <img id="picture" src ="" onclick="showPictureInfo()" />
+      <div id="showContent" hidden> 
+        <p id="name"></p>
+        <p id="description"></p>
+        <button onclick="downloadImage()">Download</button>
+      </div>
+      <button onclick="previousPicture()">Previous</button>
+      <span id="counter"></span>
+      <button onclick="nextPicture()">Next</button>
     </div>
-</body>
+  </body>
 </html>
