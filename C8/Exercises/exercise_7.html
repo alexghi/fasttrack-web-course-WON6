@@ -15,7 +15,33 @@
   <body>
     <table id="myTable" border="1"></table>
     <form>
-      <input type="button" onclick="createTable()" value="Create the table" />
+      <input type="button" onclick="createTable()" value="Create the table">
     </form>
+    <script>
+      function createTable() {
+row = window.prompt("Rows number", 1);
+column = window.prompt("Columns number",1);
+  
+ for(var r=0;r<parseInt(row,10);r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<parseInt(column,10);c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML="Row-"+r+" Column-"+c; 
+    }
+   }
+   var table = document.getElementById('myTable');
+   if(myTable != null) {
+     if(table.rows[0] != null) {
+        table.rows[0].stylebackgroundColor =  "#365890";
+     }
+     for (var i = 0; i < table.rows.length; i++) {
+       if(i%2==0)
+       table.rows[i].style.backgroundColor = "#365890";
+     }
+   }
+}
+    </script>
   </body>
 </html>

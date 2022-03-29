@@ -1,11 +1,17 @@
 <!-- 1. Here is a sample html file with a submit button.
      Now modify the style of the paragraph text 
      through javascript code.  
-    -->
+-->
 <html>
   <head>
     <meta charset="utf-8" />
     <title>JS DOM paragraph style</title>
+      <script>
+        var js_style = function() {
+          document.querySelector('p') //identifica primul paragraf din pagina
+          .innerHTML = 'lorem ipsum'
+        }
+      </script>
   </head>
   <body>
     <p id="text">JavaScript Exercises - w3resource</p>

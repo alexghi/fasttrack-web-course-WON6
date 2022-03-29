@@ -12,11 +12,24 @@
         rel="nofollow"
         target="_self"
         href="https://www.w3resource.com/"
-        >w3resource</a
-      >
+        >w3resource</a>
     </p>
     <button onclick="getAttributes()">
       Click here to get attributes value
     </button>
+    <script>
+      function getAttributes() {
+      var link = document.getElementById("w3r").href;
+      alert('href attribute of the link is: ' +link);
+      var hreflang = document.getElementById("w3r").hreflang;
+      alert('href attribute of the hreflang is: ' +hreflang);
+      var rel = document.getElementById("w3r").rel;
+      alert('href attribute of the rel is: ' +rel);
+      var target = document.getElementById("w3r").target;
+      alert('href attribute of the target is: ' +target);
+      var type = document.getElementById("w3r").type;
+      alert('href attribute of the target is: ' +type);
+    }
+    </script>
   </body>
 </html>

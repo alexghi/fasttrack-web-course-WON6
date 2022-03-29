@@ -6,6 +6,13 @@
     <title>Paragraph exercise</title>
   </head>
   <body>
-    
+    <p id="myPar"> How to change the Background Color of Paragraph in JavaScript</p>
+    <button type = "button" onclick = "changeBackground()"> Click </button>
+    <script>
+          function changeBackground() {
+            const element = document.getElementById("myPar");
+            element.style.backgroundColor = "#66ffff";
+          }
+    </script>
   </body>
 </html>

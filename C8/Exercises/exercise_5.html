@@ -20,4 +20,13 @@
     <br />
     <input type="button" onclick="insert_Row()" value="Insert row" />
   </body>
+  <script>
+    function insert_Row(){
+      var x = document.getElementById('sampleTable').insertRow(0);
+      var y = x.insertCell(0);
+      var z = x.insertCell(1);
+      y.innerHTML="new_cell_1";
+      z.innerHTML="new_cell_2"
+    }
+  </script>
 </html>

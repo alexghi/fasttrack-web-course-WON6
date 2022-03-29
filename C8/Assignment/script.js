@@ -11,3 +11,35 @@ const images = [
     'https://images.unsplash.com/photo-1474649107449-ea4f014b7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80',
     'https://images.unsplash.com/photo-1509059852496-f3822ae057bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2145&q=80'
 ]
+
+window.addEventListener('load', (event) => {
+    var img = '';
+    for (let i = 0; i < images.length; i++) {
+        img += '<img src='+images[i]+'/>';
+    }
+    document.getElementById('carousel_img').innerHTML = img;
+
+    const carouselImages = document.querySelector('.carousel__images');
+    const carouselButtons = document.querySelectorAll('.carousel__button');
+    const numberOfImages = document.querySelectorAll('.carousel__images img').length;
+    let imageIndex = 1;
+    let translateX = 0;
+
+    carouselButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        if (event.target.id === 'previous') {
+        if (imageIndex !== 1) {
+            imageIndex--;
+            translateX += 300;
+        }
+        } else {
+        if (imageIndex !== numberOfImages) {
+            imageIndex++;
+            translateX -= 300;
+        }
+        }
+        
+        carouselImages.style.transform = `translateX(${translateX}px)`;
+    });
+    });
+ });
