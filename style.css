@@ -1,0 +1,35 @@
+#carousel{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(98, 51, 143);
+    height: 50%;
+    width: 50%;
+}
+
+#imgCarousel{
+    width: 80rem;
+    height: 40rem;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border:1px solid rgb(63, 74, 228);
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    justify-content:space-between;
+    border: 1px solid #1e8ad20a;
+}
+
+#prev{
+    height: 20px;
+    background-color: rgb(233, 222, 66);
+}
+
+#next{height: 20px;
+    background-color: rgb(233, 222, 66);
+}
