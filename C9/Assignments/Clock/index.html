@@ -10,9 +10,33 @@
   <body>
     <div id="app-background-image">
       <div class="container">
-        <div class="clock-container">
-          Clock HTML goes in this place - you can remove this text
-        </div>
+        
+          <div class="clock">
+            <div class="outer-clock-face">
+              <div class="marking marking-one"></div>
+              <div class="marking marking-two"></div>
+              <div class="marking marking-three"></div>
+              <div class="marking marking-four"></div>
+              <div class="inner-clock-face">
+                <div class="inner-clock-face-inner"></div>
+                <div class="hand second"></div>
+                <div class="hand minute"></div>
+                <div class="hand hour"></div>
+                <div class="hour12">12</div>
+                <div class="hour3">3</div>
+                <div class="hour6">6</div>
+                <div class="hour9">9</div>
+            
+              </div>
+              
+            </div>
+          </div>
+          <input type="button" onclick="startStopWatch()" value="Start">
+          <input type="text" id="number">
+       
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="seconds"></div>
       </div>
     </div>
   </body>
