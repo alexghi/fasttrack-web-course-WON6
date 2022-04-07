@@ -45,8 +45,8 @@ body {
 }
 
 .clock {
-   width: 30rem;
-   height: 30rem;
+   width: 25rem;
+   height: 25rem;
    position: relative;
    padding: 2rem;
    border: 5px solid black;
@@ -238,6 +238,11 @@ body {
   text-align: center;
   bottom :1%;
   width: 100%;
+}
+
+input {
+  width: 50%;
+ margin-left: 25%;
 }
 
 
