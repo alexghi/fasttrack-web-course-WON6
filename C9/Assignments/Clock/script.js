@@ -1,28 +1,17 @@
-/* 
-sa ne gandim
-- avem de facut un cerc
-- avem de reprezentat valorile orelor, minutelor si secundelor pe acel cerc
-- intr-o ora avem 60 de minute
-- stim ca avem in Javascript Date
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+const hourHand = document.querySelector('.hour');
+const minuteHand = document.querySelector('.minute');
+const secondsHand = document.querySelector('.second');
 
-- stim ca avem functia setTimeout
-https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
-care ce face? 
-primeste ca prim parametru o functie care se va autoinvoca (se va apela) dupa un interval pe care noi il stabilim
-in al doilea parametru
-setInterval, se apeleaza la fiecare ms
-*/
+setInterval(() => {
+    let day = new Date();
+    // 360/12 = 30deg
+    // 12 is at 0deg, 1 at 30deg, each hour has a distance of 30deg between each other
+    let hour = day.getHours() * 30;
+    // 360/60 = 6deg
+    let minutes = day.getMinutes() * 6;
+    let seconds = day.getSeconds() * 6;
 
-setTimeout(function() {
-    console.log('aici dupa o secunda')
-}, 1000)
-
-setInterval(function() {
-    console.log('aici LA FIECARE secunda')
-}, 1000) // valoare exprimata in ms 1000ms = 1s 
-
-console.log(`acum - `, new Date())
-
-// functiile din acest fisier se pot inlocui cu cele pe care le veti face voi
-// sunt doar ca sa aveti cateva lucruri de la care sa porniti
+    hourHand.style.transform = `rotateZ(${(hour) + (minutes / 12)}deg)`;
+    minuteHand.style.transform = `rotateZ(${minutes}deg)`;
+    secondsHand.style.transform = `rotateZ(${seconds}deg)`;
+});
