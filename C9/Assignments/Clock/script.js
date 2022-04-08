@@ -14,57 +14,41 @@ in al doilea parametru
 setInterval, se apeleaza la fiecare ms
 */
 
-// setInterval(() => {
-//     d = new Date();
-//     hr = d.getHours();
-//     min = d.getMinutes();
-//     sec = d.getSeconds();
-
-// }
-// )
 
 
+function setDate(now) {
+  //let now = new Date();
 
-function setDate(){
-    let now = new Date();
+  let seconds = now.getSeconds();
+  let mins = now.getMinutes();
+  let hour = now.getHours();
 
-let secondHand = document.querySelector('.second');
-let minsHand = document.querySelector('.minute');
-let hourHand = document.querySelector('.hour');
+  let secondHand = document.querySelector(".second");
+  let minsHand = document.querySelector(".minute");
+  let hourHand = document.querySelector(".hour");
 
+  let secondsDegrees = (seconds / 60) * 360 + 90;
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
+  let minsDegrees = (mins / 60) * 360 + (seconds / 60) * 6 + 90;
+  minsHand.style.transform = `rotate(${minsDegrees}deg)`;
 
-let seconds = now.getSeconds();
-let secondsDegrees = ((seconds / 60) * 360) + 90;
-secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-
-let mins = now.getMinutes();
-let minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
-minsHand.style.transform = `rotate(${minsDegrees}deg)`;
-
-let hour = now.getHours();
-let hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
-hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+  let hourDegrees = (hour / 12) * 360 + (mins / 60) * 30 + 90;
+  hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
 
-setInterval(setDate, 1000);
-
-setDate();
-
-function startStopWatch (){
-    let number = document.getElementById("number").value;
-    console.log(number);
+function startStopWatch() {
+  var date = new Date ()  ;
+  date.setHours(0,0,0);
+  
+  var startClockId = setInterval(() => {  
+    setDate(date);
+    date.setSeconds(date.getSeconds() + 1)
+  }, 1000);
+  let number = parseInt(document.getElementById("number").values);
+  setTimeout(function () {
+    clearInterval(startClockId);
+  }, number * 1000);
+  console.log(number);
 }
 
-// setTimeout(function() {
-//     console.log('aici dupa o secunda')
-// }, 1000)
-
-// setInterval(function() {
-//     console.log('aici LA FIECARE secunda')
-// }, 1000) // valoare exprimata in ms 1000ms = 1s 
-
-// console.log(`acum - `, new Date())
-
-// // functiile din acest fisier se pot inlocui cu cele pe care le veti face voi
-// // sunt doar ca sa aveti cateva lucruri de la care sa porniti
