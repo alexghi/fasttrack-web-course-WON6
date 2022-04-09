@@ -296,6 +296,7 @@ body {
   background: var(--btn-color);
   color: #fff;
   outline: 0;
+  z-index: 30;
 }
 .btn:focus {
   background: var(--btn-focus-color);
@@ -348,4 +349,5 @@ body {
   right: 20px;
   top: 500px;
   box-shadow: 0 2px 2px 0 rgb(0, 187, 255), 0 1px 5px 0 rgb(0, 199, 255), 0 3px 1px -2px rgb(28, 171, 231);
+  z-index: 30;
 }
