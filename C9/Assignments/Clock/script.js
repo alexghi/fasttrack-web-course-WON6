@@ -99,7 +99,6 @@ function countingForStopwatch() {
 }
 
 function stopStopwatch() {
-    isPaused = false;
     clearInterval(interval);
     watchPlaceholder(hoursStopwatch, minutesStopwatch, secondsStopwatch);
 }
