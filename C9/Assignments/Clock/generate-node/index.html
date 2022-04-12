@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Munteanu C-9</title>
+    <script type="module">
+        class Task {
+            constructor(name, id, description, completeState, availableDateTime) {
+                this.name = name;
+                this.id = id;
+                this.description = description;
+                this.completeState = completeState;
+                this.availableDateTime = availableDateTime;
+            }
+        };
+
+        // import { Task } from "./Task.js";
+        import Teacher from "./Teacher.js";
+        import Student from "./Student.js";
+        console.log(Teacher)
+
+        let task1 = new Task("math", "1", "A", false, 1);
+        let task2 = new Task("chemistry", "2", "B", true, 2);
+        let task3 = new Task("history", "3", "C", false, 1);
+        let task4 = new Task("science", "4", "D", true, 2);
+
+        function generate() {
+            let teacher1 = new Teacher("Mary", "avb", "math");
+            let teacher2 = new Teacher("William", "cde", "chemistry");
+            let teacher3 = new Teacher("Daniel", "fgr", "history");
+            let teacher4 = new Teacher("Andrew", "gfr", "science")
+
+            let student1 = new Student("George", "102", "soccerClub");
+            student1.getAssignedTasks([task1, task3]);
+            let student2 = new Student("Kayla", "452", "footbalClub");
+            student2.getAssignedTasks([task3]);
+            let student3 = new Student("Victor", "755", "newsLetter");
+            student3.getAssignedTasks([task2, task3]);
+            let student4 = new Student("Mia", "087", "studentsCouncil");
+            student4.getAssignedTasks([task1, task4]);
+
+            teacher1.assignStudents([student1, student2]);
+            teacher2.assignStudents([student3]);
+            teacher3.assignStudents([student4, student2, student3]);
+            teacher4.assignStudents([student4]);
+
+            teacher1.describeMe();
+            teacher2.describeMe();
+            teacher3.describeMe();
+            teacher4.describeMe();
+        }
+        window.generate = generate(); 
+    </script>
+
+</head>
+
+<body>
+    <button onclick="window.generate">Generate</button>
+</body>
+
+</html>
