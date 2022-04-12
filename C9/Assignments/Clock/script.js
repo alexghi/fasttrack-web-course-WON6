@@ -45,10 +45,12 @@ function startStopWatch() {
     setDate(date);
     date.setSeconds(date.getSeconds() + 1)
   }, 1000);
-  let number = parseInt(document.getElementById("number").values);
+  let number = parseInt(document.getElementById("number").value);
   setTimeout(function () {
     clearInterval(startClockId);
   }, number * 1000);
+  console.log(typeof(number));
+  console.log(document.getElementById("number").value);
   console.log(number);
 }
 
