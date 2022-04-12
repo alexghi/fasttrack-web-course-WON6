@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family:fantasy;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bkg);
+}
+
+:root {
+    --bkg: #16161a;
+    --dark:#010101;
+    --c1:#b33131;
+    --c2:#cdcbc9;
+    --c3:#fffffe;
+    --c4: rgb(124, 35, 35);
+    --c5: rgb(238, 232, 232);
+}
+
+.container {
+    height: 15em;
+    width: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #939347; */
+}
+
+/* BUTTONS */
+
+.buttons {
+    width: 13em;
+    height: 13em;
+    /* background-color: #512020; */
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.buttons button {
+    background-color: var(--dark);
+    width: 2em;
+    height: 3em;
+    border-radius: 35%;
+    margin: 0.10em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+button:active {
+    background-color: var(--c2);
+}
+
+#stop {
+    transform: rotate(345deg); 
+    width: 4em;
+    height: 5em;
+    margin-top: 1em;
+}
+
+#start {
+   
+    width: 4em;
+    height: 5em;
+}
+
+#restart {
+    transform: rotate(25deg);
+    width: 4em;
+    height: 5em;
+    margin-top: 1em;
+}
+
+
+ /* CADRAN */
+
+ .clock {
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+    border: 0.5rem solid var(--dark);
+    box-shadow: -2px 15px 17px 3px rgba(0,0,0,0.62);
+    z-index: 1;
+    position: absolute;
+    background:var(--bkg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: repeating-conic-gradient(
+  from 359deg,
+  rgb(180, 60, 60) 0 2deg, transparent 2deg 90deg      
+), repeating-conic-gradient(
+  from 359.5deg,
+  #555 0 1deg, transparent 1deg 30deg      
+), repeating-conic-gradient(
+  from 359.75deg,
+  rgb(0, 0, 0) 0 .5deg, transparent .5deg 6deg      
+); 
+}
+
+.mask-dial {
+    width: 10.5em;
+    height: 10.5em;
+    border-radius: 50%;
+    position: absolute;
+    background:var(--bkg); 
+}
+
+.container2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.mask {
+    position: absolute;
+    z-index: 3;
+    margin-bottom: 8em;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    background-color:#fffffe1d;
+    color: var(--dark);
+    width: 4em;
+    box-shadow: -2px 15px 17px 3px rgba(0,0,0,0.62);
+}
+
+.numbers {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+}
+
+.numbers div {
+    position: absolute;
+    font-size: 2.5rem;
+    color: var(--c3);
+    text-shadow: 0.2rem 0.2rem 0.2rem #222;
+}
+
+.twelve {
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+  .three {
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+  .six {
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+  .nine {
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hands{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hands::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--c2);
+    border-radius: 50%;
+    box-shadow:7px 4px 11px 0px rgba(0,0,0,0.74);
+    z-index: 5;
+}
+
+/*  disc-ul ceasului (interior)  */
+.disc {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--c1);
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+    
+.disc-bottom {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--c1);
+    z-index: 1;
+}
+  
+.hands div {
+    position: absolute;
+    bottom: 50%;
+    box-shadow: 7px 4px 11px 0px rgba(0,0,0,0.74);
+    border-radius: 1rem;
+    transform-origin: bottom center;
+    z-index: 4;
+}
+
+#second {
+    background-color: var(--c1);
+    width: 0.2rem;
+    height: 10rem;
+    transform: rotate(360deg);
+}
+
+#second::before {
+    content: "";
+    height: 2rem;
+    width: 0.2rem;
+    background: var(--c1);
+    position: absolute;
+    top: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#minute {
+    background-color: var(--c2);
+    width: 0.5rem;
+    height: 8rem;
+    transform: rotate(45deg);
+}
+#minute::after {
+    content: "";
+    height: 2rem;
+    width: 0.5rem;
+    background: var(--c2);
+    position: absolute;
+    top: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#hour {
+    background-color: var(--c2);
+    width: 0.7rem;
+    height: 6rem;
+    transform: rotate(90deg);
+    
+}
+
+
+
+  
