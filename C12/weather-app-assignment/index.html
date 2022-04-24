@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="weather-title">
+                <h1>Today</h1>
+                <h2 id="today-weather-header"></h2>
+                <h2 id="location"></h2>
+            </div>
+            <div class="center-element">
+                <img id="today-weather-img" src="">
+            </div>
+            <div class="weather-details">
+                <span class="temperature"></span>
+                <span class="sky-info"></span>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="weather-top-side">
+                <h1 class="title">This Week</h1>
+                <div class="toggle-button-cover">
+                    <div class="button b2" id="btn">
+                        <input id="checkbox" type="checkbox" class="checkbox"/>
+                        <div class="knobs">
+                            <span>C</span>
+                        </div>
+                        <div class="layer">
+                            <span>F</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="weather-content" class="weather-week-container"></div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

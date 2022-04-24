@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+
+:root {
+    --border-radius: 4px;
+    --box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    --cards-box-shadow: 4px 3px 3px rgba(52, 98, 69, 0.12), 0 1px 2px rgba(52, 98, 69, 0.5);
+    --gradient: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    --c-white: #f2f2f2;
+    --c-white-2: #ebf7fc;
+    --c-white-pinkey: #fcebeb;
+    --c-grey-500: #4e4e4e;
+    --c-grey-600: #464646;
+    --c-grey-700: #333333;
+    --c-light-blue: #03a9f4;
+    --c-forest-green: #0ea14c;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background: var(--c-white);
+    font-family: "Playfair Display", serif;
+    color: var(--c-grey-700);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 450px;
+    background: var(--c-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.left-side {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    background-image: var(--gradient);
+    width: 14%;
+
+    display: flex;
+    flex-direction: column;
+    color: var(--c-grey-700);
+}
+
+.left-side .weather-title {
+    margin: 0 15px 0 15px;
+    flex-grow: 2;
+    text-align: center;
+}
+
+.left-side .weather-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 5;
+    padding: 20px;
+    text-align: center;
+}
+
+.weather-details .temperature {
+    font-size: 3.25em;
+}
+
+.right-side {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-top-side {
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.title {
+    display: flex;
+    width: 50%;
+    margin: 20px 0 0 20px;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.toggle-button-cover {
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 80px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+.button {
+    position: relative;
+    width: 85px;
+    height: 50px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.button.b2 {
+    border-radius: 2px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: var(--c-white-2);
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+#btn .knobs:before,
+#btn .knobs:after,
+#btn .knobs span {
+    position: absolute;
+    top: 4px;
+    width: 30px;
+    height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    border-radius: 2px;
+    transition: 0.3s ease all;
+}
+
+#btn .knobs:before {
+    content: "";
+    left: 4px;
+    background-color: var(--c-light-blue);
+}
+
+#btn .knobs:after {
+    content: "F";
+    right: 4px;
+    color: var(--c-grey-500);
+}
+
+#btn .knobs span {
+    display: inline-block;
+    left: 4px;
+    color: var(--c-white);
+    z-index: 1;
+}
+
+#btn .checkbox:checked + .knobs span {
+    color: var(--c-grey-500);
+}
+
+#btn .checkbox:checked + .knobs:before {
+    left: 42px;
+    background-color: var(--c-forest-green);
+}
+
+#btn .checkbox:checked + .knobs:after {
+    color: var(--c-white);
+}
+
+#btn .checkbox:checked ~ .layer {
+    background-color: var(--c-white-pinkey);
+}
+
+.weather-week-container {
+    display: flex;
+    width: calc(100% - 10px);
+    height: 100%;
+    flex-direction: row;
+    padding: 0 0 10px 10px;
+}
+
+.weather-day {
+    box-sizing: border-box;
+    border-width: 10px;
+    border-style: solid;
+    border-image: var(--gradient);
+    box-shadow: var(--cards-box-shadow);
+    flex-grow: 1;
+    height: 100%;
+    margin-right: 12px;
+    padding: 0;
+    border-radius: var(--border-radius);
+    text-align: center;
+
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-day:last-child {
+    margin-right: 0
+}
+
+.weather-day-heading {
+    margin: 0;
+    font-size: 30px;
+}
+
+.weather-img {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    width: 50px;
+    height: 150px;
+    padding-top: 50%;
+    text-align: center;
+}
+
+.center-element {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#today-weather-img {
+    width: 100px;
+    justify-self: center;
+    align-self: center;
+}
+
+.weather-img img {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.weather-img h4 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.day-temperatures {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.temp {
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.left-side .weather-details .temperature {
+    font-size: 30px;
+}
+
+.temperature {
+    font-size: 20px;
+    margin: 0 12px;
+}

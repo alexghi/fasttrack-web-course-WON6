@@ -1,0 +1,75 @@
+{
+  "region": "London, UK",
+  "currentConditions": {
+    "dayhour": "Friday 6:00 PM",
+    "temp": { "c": 14, "f": 58 },
+    "precip": "0%",
+    "humidity": "55%",
+    "wind": { "km": 16, "mile": 10 },
+    "iconURL": "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+    "comment": "Mostly cloudy"
+  },
+  "next_days": [
+    {
+      "day": "Friday",
+      "comment": "Cloudy",
+      "max_temp": { "c": 16, "f": 61 },
+      "min_temp": { "c": 10, "f": 50 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/cloudy.png"
+    },
+    {
+      "day": "Saturday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 17, "f": 63 },
+      "min_temp": { "c": 9, "f": 48 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    },
+    {
+      "day": "Sunday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 18, "f": 64 },
+      "min_temp": { "c": 6, "f": 43 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    },
+    {
+      "day": "Monday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 15, "f": 59 },
+      "min_temp": { "c": 4, "f": 40 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    },
+    {
+      "day": "Tuesday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 16, "f": 60 },
+      "min_temp": { "c": 5, "f": 41 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    },
+    {
+      "day": "Wednesday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 16, "f": 61 },
+      "min_temp": { "c": 5, "f": 41 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    },
+    {
+      "day": "Thursday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 17, "f": 62 },
+      "min_temp": { "c": 6, "f": 42 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    },
+    {
+      "day": "Friday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 16, "f": 61 },
+      "min_temp": { "c": 5, "f": 41 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    }
+  ],
+  "contact_author": {
+    "email": "communication.with.users@gmail.com",
+    "auth_note": "Mail me for feature requests, improvement, bug, help, ect... Please tell me if you want me to provide any other free easy-to-use API services"
+  },
+  "data_source": "https://www.google.com/search?lr=lang_en&q=weather+in+london"
+}
