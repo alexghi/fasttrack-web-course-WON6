@@ -50,12 +50,8 @@ html {
     height: 30%;
     box-shadow: var(--box-shadow);
     display: flex;
-    /*flex-direction: row;*/
-    /*margin-top: 25px;*/
     align-self: center;
     justify-self: center;
-    /*align-content: center;*/
-    /*justify-content: center;*/
     justify-items: center;
     align-items: center;
     text-align: center;
@@ -72,8 +68,6 @@ h4 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /*align-items: center;*/
-    /*justify-items: center;*/
     height: 85%;
     width: 20%;
     background: var(--c-white);
