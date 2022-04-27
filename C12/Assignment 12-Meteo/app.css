@@ -1,0 +1,39 @@
+body {
+  background-image: url("https://www.psdgraphics.com/wp-content/uploads/2019/01/bright-white-clouds.jpg");
+  background-size: 300%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-top: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  border: 2px solid aqua;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  margin-left: 10%;
+}
+
+.right-side {
+  margin-left: 50%;
+  text-align: center;
+}
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.day {
+  border: 1px dotted gray;
+  text-align: center;
+  margin: 10px;
+}
