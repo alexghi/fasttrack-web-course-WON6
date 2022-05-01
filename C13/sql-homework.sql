@@ -126,13 +126,27 @@ create table table_schema.consumption_info (
 insert into publisher_info (video_id, video_duration)
 values (1, 30), (2, 20), (3, 30), (4, 20);
 
-select AVG(video_duration)
-from publisher_info;
+select p.publisher_id, AVG(c.user_timespent)
+from consumption_info as c
+join publisher_info as p
+on p.video_id = c.video_id
+group by p.publisher_id;
+
+-- select *
+-- from consumption_info;
+--
+-- update consumption_info
+-- set user_timespent = 60
+-- where video_id = 1;
 
 insert into consumption_info (video_id, user_id, user_timespent)
-values (1, 1, 30), (2, 2, 20), (3, 2, 30);
+values (1, 1, 30), (2, 2, 20), (3, 2, 0);
+
+insert into consumption_info (video_id, user_id, user_timespent)
+values (1, 4, 30);
 
 select COUNT(publisher_info.video_id)
 from publisher_info
 inner join consumption_info
-on publisher_info.video_id = consumption_info.video_id;
+on publisher_info.video_id = consumption_info.video_id
+and consumption_info.user_timespent > 0;
