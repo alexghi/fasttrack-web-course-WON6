@@ -1,0 +1,30 @@
+#wrapper-container {
+  height: auto;
+  padding: 50px;
+  margin: 50px;
+  background-color: aqua;
+}
+#top-container {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#vremea_curenta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#bottom_container {
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: beige;
+}
+body {
+  color: green;
+}
