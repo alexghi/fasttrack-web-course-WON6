@@ -1,0 +1,34 @@
+.exercise1 {
+    height: 500px;
+    width: 500px;
+    background-color: yellow;
+}
+
+.center {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.joke-box {
+    margin: 5px;
+    padding: 0 20px;
+    border: solid black;
+}
+
+.margin-right {
+    margin-right: 5px;
+}
+
+.list-style {
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+    border: solid black;
+}

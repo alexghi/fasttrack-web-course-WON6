@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/fasttrack-web-course-WON6.iml" filepath="$PROJECT_DIR$/.idea/fasttrack-web-course-WON6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/fasttrack-web-course.iml" filepath="$PROJECT_DIR$/.idea/fasttrack-web-course.iml" />
     </modules>
   </component>
 </project>

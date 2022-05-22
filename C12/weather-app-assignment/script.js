@@ -14,7 +14,6 @@ fetch('https://weatherdbi.herokuapp.com/data/weather/cluj-napoca')
     .then(response => onResponseReceived(response))
     .catch(err => console.error(err));
 
-
 function onResponseReceived(responseData) {
     weatherData = responseData;
     updateWeatherUi();
