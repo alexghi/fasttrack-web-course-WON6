@@ -1,0 +1,97 @@
+
+Object Oriented Programming:
+	- what is an object?
+	- what is a class?
+	- Abstraction
+	- Encapsulation
+	- Inheritance
+		- overloading
+		- overriding
+	- Aggregation/Composition
+	- Polymorphism
+	- static
+	- final
+	- this keyword
+	- abstract class
+	- Interface
+
+Basic Collection Knowledge:
+	- List : ArrayList
+	- Set  : HashSet
+	- Map  : HashMap
+	- Collection
+	- Iterator
+	- Enum
+
+Basic GIT:
+	- basic definition (distributed version control system)
+	- clone
+	- add
+	- commit
+	- pull
+	- push
+
+Exceptions:
+	- CHECKED
+	- UNCHECKED
+	- define custom exception
+	- try-catch
+	- throw 
+	- throws
+
+Unit Tests:
+	- test parts
+	- basic setup and tests
+	- basic annotations: @BeforeEach, @AfterEach, @BeforeAll, @AfterAll
+
+Basic Algorithms:
+	- linear search (find an element in a list/array with simple for)
+	- (extra) sorting algorithms: bubble sort :https://www.geeksforgeeks.org/bubble-sort/
+	- palindrome
+	- reverse string/number
+	- recursivity
+		- what it is; components of recursion
+		- recursive reverse
+		- fibonacci
+		- factorial
+
+Extra:
+Functional Programming:
+	- basic lambda usage
+	- Optional
+	- working with collections & lambdas
+		- filter
+		- map
+		- collect
+		- groupingBy
+	- method references
+
+Spring:
+	- what is the Spring Bean Container
+	- how do we define a bean
+	- Spring Web
+		- define a RestController
+		- define a Service
+	- Spring Data
+		- define a Spring Data Repository
+		- access the data using the default methods
+		- add custom methods to your Spring Data Repository
+
+REST:
+	- what it means
+	- what are the components:
+		- url
+		- headers
+		- body
+		- methods : GET, POST, PUT, PATCH, DELETE
+	- how we model REST resources
+
+3-tier architecture:
+	the 3 levels: Presentation-Business-Persistence
+
+SOLID Principles:
+	S (SRP): The Single Responsibility Principle	: A class should have one, and only one, reason to change.
+	O (OCP): The Open Closed Principle				: Open to extension, Closed to modifications; you should be able to extend a classes behavior, without modifying it.
+	L (LSP): Liskov Substitution Principle			: Derived classes must be substitutable for their base classes.
+	I (ISP): Interface Segregation Principle		: Make fine grained interfaces that are client specific.
+	D (DIP): Dependency Inversion Principle			: Depend on abstractions, not on concretions.
