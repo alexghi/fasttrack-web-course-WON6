@@ -9,15 +9,16 @@ import {
   useNavigate,
   useLocation,
   useParams,
+  
 } from "react-router-dom";
-import React from "react";
+import React, {useState} from "react";
 
 function App() {
   return (
     <div className="App">
       <h1>Welcome to React Router!</h1>
       <Routes>
-        <Route path="/" element={<HomeWithRouter />} />
+        <Route path="/" element={<FunctionalHome />} />
         <Route path="dashboard" element={<Dashboard />}>
           <Route index element={<DashboardHome />} />
           <Route path="settings" element={<Settings />} />
@@ -26,6 +27,46 @@ function App() {
     </div>
   );
 }
+
+function FunctionalHome () {
+  const [username,setUsername] = useState('');
+  const [password,setPassword] = useState('');
+  const navigate= useNavigate();
+  return (
+    <>
+      <main>
+        <h2>Welcome to the homepage!</h2>
+        <p>You can do this, I believe in you.</p>
+      </main>
+      <div className="home-container">
+        <label>Username </label>
+        <input
+          placeholder="username"
+          type="text"
+          value={username}
+          onChange={(e) => {setUsername(e.target.value)}}
+        />
+        <p></p>
+        <label>Password </label>
+        <input
+          placeholder=" password "
+          type="password"
+          value={password}
+          onChange={(e) => {setPassword(e.target.value)}}
+        />
+        <p></p>
+        <button
+          style={{ backgroundColor: "greenyellow" }}
+          onClick={() => {navigate('/dashboard')}}
+        >
+          {" "}
+          Log In{" "}
+        </button>
+      </div>
+    </>
+  );
+}
+
 
 class Home extends React.Component {
   constructor(props) {
