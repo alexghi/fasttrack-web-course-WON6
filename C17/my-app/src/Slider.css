@@ -1,0 +1,22 @@
+.Buttonleft {
+  position: absolute;
+  top: 50%;
+  background-color: gray;
+}
+
+.Buttonright {
+  position: absolute;
+  top: 50%;
+  background-color: gray;
+  right: 0;
+}
+
+.Image {
+    position: absolute;
+    margin-left: 40%;
+    top: 30%;
+    width: 300px;
+    border-radius: 5%;
+    
+
+}
