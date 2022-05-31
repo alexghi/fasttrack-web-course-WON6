@@ -1,0 +1,75 @@
+{
+  "region": "Oradea, Romania",
+  "currentConditions": {
+    "dayhour": "Tuesday 8:00 AM",
+    "temp": { "c": 11, "f": 52 },
+    "precip": "2%",
+    "humidity": "83%",
+    "wind": { "km": 10, "mile": 6 },
+    "iconURL": "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+    "comment": "Sunny"
+  },
+  "next_days": [
+    {
+      "day": "Tuesday",
+      "comment": "Showers",
+      "max_temp": { "c": 22, "f": 71 },
+      "min_temp": { "c": 9, "f": 49 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+    },
+    {
+      "day": "Wednesday",
+      "comment": "Scattered thunderstorms",
+      "max_temp": { "c": 22, "f": 71 },
+      "min_temp": { "c": 9, "f": 49 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+    },
+    {
+      "day": "Thursday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 23, "f": 74 },
+      "min_temp": { "c": 12, "f": 53 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    },
+    {
+      "day": "Friday",
+      "comment": "Thunderstorm",
+      "max_temp": { "c": 22, "f": 71 },
+      "min_temp": { "c": 11, "f": 52 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"
+    },
+    {
+      "day": "Saturday",
+      "comment": "Showers",
+      "max_temp": { "c": 20, "f": 68 },
+      "min_temp": { "c": 10, "f": 50 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+    },
+    {
+      "day": "Sunday",
+      "comment": "Thunderstorm",
+      "max_temp": { "c": 21, "f": 70 },
+      "min_temp": { "c": 9, "f": 48 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"
+    },
+    {
+      "day": "Monday",
+      "comment": "Scattered showers",
+      "max_temp": { "c": 20, "f": 68 },
+      "min_temp": { "c": 8, "f": 46 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+    },
+    {
+      "day": "Tuesday",
+      "comment": "Partly cloudy",
+      "max_temp": { "c": 20, "f": 68 },
+      "min_temp": { "c": 8, "f": 47 },
+      "iconURL": "https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+    }
+  ],
+  "contact_author": {
+    "email": "communication.with.users@gmail.com",
+    "auth_note": "Mail me for feature requests, improvement, bug, help, ect... Please tell me if you want me to provide any other free easy-to-use API services"
+  },
+  "data_source": "https://www.google.com/search?lr=lang_en&q=weather+in+oradea"
+}

@@ -1,0 +1,117 @@
+body,
+html {
+  background: bisque;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.AllContainer {
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 50%;
+  background: burlywood;
+}
+
+.FirstContainer {
+  width: 20%;
+  align-self: flex-start;
+}
+
+.FirstContainer .WeatherToday {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.FirstContainer.TodayC {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 5;
+  padding: 20px;
+  text-align: center;
+}
+.TodayC {
+  text-align: -webkit-center;
+}
+
+.TodayC .Temperature {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.TodayC .Info {
+  display: inline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.SecondContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.WeatherWeek {
+  align-self: flex-start;
+}
+
+.ThisWeek {
+  display: flex;
+  width: 50%;
+  margin: 20px 0 0 20px;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.WeatherForWeek {
+  width: 95%;
+  display: flex;
+  align-self: center;
+}
+
+.AllDays {
+  background: cadetblue;
+  display: block;
+  text-align: -webkit-center;
+}
+
+.Weather_Img {
+  align-items: flex-start;
+  width: 90%;
+  display: block;
+}
+#about {
+  display: inline-block;
+}
+
+.City {
+  display: grid;
+  justify-content: center;
+}
+
+#ImgToday {
+  width: 100px;
+  justify-self: center;
+  align-self: center;
+}
+
+.weather-img img {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.weather-img h4 {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.Temp_Days {
+  display: flex;
+  justify-items: flex-end;
+}

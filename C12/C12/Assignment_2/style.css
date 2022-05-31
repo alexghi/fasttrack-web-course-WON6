@@ -1,0 +1,65 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(245, 227, 205);
+}
+
+.Container {
+    width: 80%;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(250, 240, 228);
+}
+
+.Product{
+  display: flex;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.ProductContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 70%;
+    width: 50%;
+}
+
+.ProductImg {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.Product{
+    position: relative; 
+     align-content: center;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.Info{
+     padding: 2px;
+    font-size: medium;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+   
+}
+
