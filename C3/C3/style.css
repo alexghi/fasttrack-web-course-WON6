@@ -1,0 +1,347 @@
+html {
+    font-size: 62.5%; /* font-size 1em = 10px */
+  }
+  html,
+  body {
+    margin: 0 auto;
+    padding:30px;
+    max-width: 600px;
+    background-color:whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  }
+.container{ 
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+#home{
+    display: block;
+    
+}
+#photo{ 
+    margin:10px;
+    display: flex;
+    width: 200px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.title{
+    align-items: center;
+    width: fit-content;
+    display: flex;
+}
+#lorem{
+    display: flex;
+    text-align: left;
+    width: fit-content;
+}
+#contactme{
+    display: flex;
+    line-height: 0;
+    color: black;
+    text-decoration: none;
+    align-items: baseline;
+    font-size:14 ;
+    
+
+}
+.container2{
+    margin-top: 1px;
+    display:inline-flex;
+    border-top:solid 1px rgb(231, 218, 218);
+    
+}
+.middle{
+    display: grid;
+    flex-basis: content;
+    text-align: start;
+}
+
+.aboutme{
+    margin-top: 40px;
+
+}
+p{
+    font-size: 14px;
+    display: block;
+    color:grey;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+
+#moreaboutme{
+    display: flex;
+    line-height: 0;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+table{
+    display: flex;
+    text-align: -webkit-match-parent;
+}
+
+td{
+    color:grey;
+}
+.container3{
+    margin-top: 1px;
+    display:block;
+    border-top:solid 1px  rgb(231, 218, 218) ;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+#allprojects{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    float:inline-end;
+    font-size: 14px;
+}
+.container4{
+    display: flex;
+    background-color: white;
+    border-radius: 5%;
+
+}
+.projects{
+    display: block;
+    margin-left: 20px;
+    line-height: 1;
+}
+#seeproject{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    float:inline-end;
+    font-size: 14px;
+}
+    
+ #photo2{
+     width: 200px;
+     border-radius: 5%;
+ }
+ #backhome{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    font-size: 16px;
+    color: darkblue;
+    text-decoration: none;
+   
+}
+.grandparents{
+    display: grid;
+    background-color: white;
+    border-radius: 5%;
+    text-align: start;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+}
+.parent{
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+}
+ 
+
+.form1{
+    font-size: 16px;
+    display: inline-grid;
+    position: relative;
+    
+}
+#name{
+   border: 0;
+   border-bottom: solid 1px grey;
+}
+#email{
+    border: 0;
+    border-bottom: solid 1px grey;
+}
+
+.form2{
+    font-size: 16px;
+    display: inline-grid;
+    position: relative;
+    float: right;
+    
+}
+#phone{
+    border: 0;
+    border-bottom: solid 1px grey;
+}
+
+#subject{
+    border: 0;
+    border-bottom: solid 1px grey;
+}
+
+.child{
+    font-size: 16px;
+
+}
+#message{
+    border: 0;
+    display: flex;
+    width: 500;
+    margin-top: 10px;
+    border-bottom: solid 1px grey;
+}
+#sendmessage{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    float:inline-end;
+    font-size: 14px;
+}
+.socialmedia{
+    display: grid;
+    width: 600px;
+    border-top: solid 1px grey;
+}
+.socialmedia1{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+.facebook{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    
+}
+.youtube{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    
+
+}
+.twitter{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+}
+.dribbble{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+}
+.socialmedia2{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+
+}
+.linkedln{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+}
+.whatsApp{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+}
+.instagram{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+}
+.telegram{
+    background-color: white;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+}
+.all{
+    display: block;
+    width: 700px;
+}
+.container6{
+    display: block;
+    text-align: center;
+}
+#backhome{
+    color: black;
+}
+#contact{
+    display: contents;
+}
+.container7{
+    display: block;
+
+}
+#seeprojects{
+    display: contents;
+}
+.container8{
+    display: flex;
+    justify-content: center;
+
+}
+.advanced{
+    display: block;
+    padding: 20px;
+
+}
+#saaplex{
+    font-size:16px;
+}
+#advanced{
+    width:300px;
+}
+.crypto{
+    display: block;
+    padding: 20px;
+}
+#coinx{
+    font-size: 16px;
+}
+#crypto{
+    width: 300px;
+}

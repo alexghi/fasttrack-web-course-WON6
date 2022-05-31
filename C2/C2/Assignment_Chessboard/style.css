@@ -1,0 +1,30 @@
+
+.Chessboard{
+    border-spacing: 0;
+    border:solid 1px;
+    height: 300px;
+    width: 300px;
+
+}
+td{
+    width: 100px;
+    height: 100px;
+}
+ .Chessboard td.Black{
+     text-align: center;
+     font-size: 25px;
+    width: 30px;
+    height: 30px;
+     background-color: rgb(209, 209, 209);
+     border: none;
+ }
+ .Chessboard td.White{
+     text-align: center;
+
+     font-size: 25px;
+     width: 30px;
+     height: 30px;
+     background-color: whitesmoke;
+     border: none;
+
+ }

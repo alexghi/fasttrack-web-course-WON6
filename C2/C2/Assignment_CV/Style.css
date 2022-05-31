@@ -1,0 +1,80 @@
+H1{
+    text-align: center;
+    font-size: 25px;
+    border: inset 5px plum;
+
+}
+#me{
+    background-color: rgb(248, 230, 233);
+}
+#Photo{
+    display: left;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    width: 20%;
+   border-radius: 20%;
+}
+#contact{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border: 3px solid rgb(44, 12, 19); 
+
+}
+p{
+   text-align: center; 
+   background-color: rgb(149, 131, 165);
+   width: 10%;
+   margin: auto;
+   letter-spacing: 3px
+}
+h2{
+    text-align: center;
+    margin-left: 10%;
+    background-color: rgb(149, 131, 165) ;
+    opacity:0.8 ;
+    width: 80%;
+
+
+}
+#main{
+      background-color: rgb(241, 192, 217);
+  }
+#home{
+    text-align: center;
+    background-color: rgb(64, 184, 231);
+    color: black ;
+    letter-spacing: 5px;
+    width: 300px;
+   border: 15px solid rgb(63, 96, 167);
+   padding: 50px;
+   margin: 20px;
+   opacity:initial;
+}
+#body{
+    background-color:rgb(245, 112, 152);
+}
+#back{
+    text-align: center;
+    position:relative;
+    left: 200px;
+    width: 300px;
+   border: 15px solid rgb(63, 96, 167);
+   border-radius: 20%;
+   padding:50px;
+   margin: 50px;
+   background-color: rgb(175, 148, 171);
+   color: black ;
+   letter-spacing: 5px;
+   opacity:0.8;
+}
+#about{
+    line-height: 100px;
+    height: 100px;
+    border: 5px dashed  rgb(63, 96, 167);
+    text-align: center;
+    background-color: rgb(175, 148, 171);
+    margin-left: 300px;
+}
