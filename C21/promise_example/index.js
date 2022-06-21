@@ -1,7 +1,8 @@
 function getNasaData()  {
     console.log('here')
 
-    fetch('https://api.nasa.gov/planetary/apod?api_key=Ed74ovwewYjcfqvQi7W6trteJHatPPg6inmZ6Nhe')
+    //https://api.nasa.gov/
+    fetch('https://api.nasa.gov/planetary/apod?api_key=XXX-your key from NASA')
     .then(data => data.json() )
     .then(jsonData => jsonData)  
     .catch( e => {
